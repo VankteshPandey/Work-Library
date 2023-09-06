@@ -1,0 +1,100 @@
+/* I added linear Gradient to our body and choose a font family */
+body {
+    background: linear-gradient(to bottom , rgb(255, 145, 0), #ffffff , rgb(3, 138, 10));
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* This is the class of our first div */
+.container{
+    border: 3px solid white;
+    height: 60px;
+    margin-top: 15spx;
+    background-color: rgb(38, 0, 255);
+    margin-top: 40px;
+    
+}
+
+/* I added hover effect to this div */
+.container:hover{
+    background-color: aqua;
+    
+}
+
+/* Configure here the position of the child of the above div and added a font family */
+.container > h1{
+    margin-left: 600px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25pt;
+    
+}
+
+/* Add some hovering effect to make look cool */
+.container > h1:hover{
+    font-size: 30px;
+    transition: .6s;
+}
+
+/* This section contain the  configration of paragraphs */
+.para1{
+    border-top: 2px solid rgba(0, 0, 0, 0.493);
+    margin-top: 30px;
+}
+.para2{
+    border-top: 2px solid rgba(0, 0, 0, 0.493);
+    margin-top: 30px;
+}
+.para3{
+    border-top: 2px solid rgba(0, 0, 0, 0.493);
+    margin-top: 30px;
+}
+.para1 > p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para2 > p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para3 > p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* I configer footer in this section  */
+.footer{
+    border-top: 2px solid rgba(0, 0, 0, 0.493);
+    margin-top: 50px;
+}
+
+/* I added styling to our buttons  */
+.btn{
+    background-color:rgb(0, 110, 255);
+    border: 2px solid rgb(0, 110, 255);
+    border-bottom-right-radius: 10px;
+    width: 240px;
+    height: 30px;
+    
+    border-collapse: collapse;
+    
+}
+
+/* Add a hover effet to make looks cool  */
+.btn:hover{
+    height: 35px ;
+    background-color: rgba(123, 255, 0, 0.774);
+    transition: 0.5s;
+    font-size: 16px;
+}
+/* Added a colour to our navbar */
+nav{
+    background-color: rgb(0, 110, 255);
+}
+
+
+
+
+
+
+

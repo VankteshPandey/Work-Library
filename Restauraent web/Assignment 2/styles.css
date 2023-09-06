@@ -1,0 +1,40 @@
+/* I removed the padding and margin from the 
+web page so that is can customise margine and padding */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Lets add a back ground image in our front page  */
+body{
+    background-image: url("R1.jpg");
+    background-size: cover;
+}
+
+/* This is the image for our navigation bar  */
+.navimg{
+    background-image: url("R3.jpg");
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 400px;
+    margin-left: 8cm;
+}
+
+/* I added styling to our buttons  */
+.btn{
+    background-color:rgb(0, 110, 255);
+    border: 2px solid rgba(41, 192, 36, 0.575);
+    border-bottom-right-radius: 10px;
+    width: 240px;
+    height: 30px;
+    margin-top: 370px;
+    border-collapse: collapse;
+    
+}
+/* Add a hover effet to make looks cool  */
+.btn:hover{
+    height: 35px ;
+    background-color: rgba(123, 255, 0, 0.774);
+    transition: 0.5s;
+    font-size: 16px;
+}

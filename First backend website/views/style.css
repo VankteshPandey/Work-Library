@@ -1,0 +1,67 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body {
+background-image: url("bg.jpg");
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+h1{
+  margin-top: 10px;
+  margin-left: 44%; 
+  
+}
+
+
+
+.myForm{
+margin: 20px;
+padding: 20px 30px;
+display: flex;
+flex-direction: column;
+position: absolute;
+left: 30%;
+}
+.input{
+  
+  padding: 10px 10px;
+  margin: 10px ;
+  width: 400px;
+  border: 2px solid gray;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px rgba(29, 29, 29, 0.829) ; 
+  background-color: rgb(22, 193, 200);
+    
+   
+}
+input:hover{
+box-shadow: 0px 0px 5px rgb(236, 56, 56) ;
+border-color: rgb(255, 0, 140);
+transition: .4s;
+}
+
+.btn{
+width: 70px;
+padding: 5px 10px 5px;
+margin-left: 190px;
+background-color: rgb(0, 153, 255);
+font-weight: bold;
+border-radius: 5px;
+text-size-adjust: 2px;
+font-family: 'Times New Roman', Times, serif;
+  
+ 
+}
+.btn:hover{
+outline: solid rgba(32, 77, 226, 0.541);
+border: 3px solid white;
+
+transition: .2s;
+
+}
+lable{
+  margin-left: 180px
+    
+}

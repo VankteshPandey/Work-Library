@@ -1,0 +1,24 @@
+doctype html 
+html 
+  head
+    style  
+      include style.css
+    
+    title first backend website 
+    body 
+
+      
+      h1 Contect Us  
+
+      form(action="/index", method="post", class="myForm")
+        input(type="text", name="name", class="input", placeholder ="Enter your name")
+        input(type="email", name="email", class="input", placeholder ="Enter your email")
+        input(type="tel", name="phone", class="input", placeholder ="Enter your phone number")
+        input(type="text", name="feedback", class="input", placeholder ="Enter your feedback")
+        input(type="password", name="password", class="input", placeholder="Enter your password")
+        button(class="btn") Submit 
+
+
+      script 
+       include  script.js 
+

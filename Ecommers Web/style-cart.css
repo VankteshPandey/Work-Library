@@ -1,0 +1,12 @@
+* {
+
+    padding: 0%;
+    margin: 0%;
+} 
+/* Main body and background section */
+body {
+   
+    background-size: 1312px 600px;
+    background-repeat: no-repeat;
+    background-color: #E2F6CA;
+} 

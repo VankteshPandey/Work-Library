@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-cart.css">
+    
+    <title>Cart Page</title>
+</head>
+
+<body>
+     <!-- This section contain import the navbar code from header.html -->
+     <div id="navbar-placeholder"></div>
+     
+    <div class="container">
+        <div class="row">
+            <!-- Part 1: List of Items -->
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="w3.jpeg" class="card-img" alt="Product 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">saree</h5>
+                                <p class="card-text">Price: ₹500.00</p>
+                                <button class="btn btn-danger delete-button"><i class="fa fa-trash"></i></button>
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-outline-secondary minus"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input type="number" class="form-control quantity-input" value="1" id="quantity">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-outline-secondary plus"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Similar card structure for Product 2 -->
+                
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="w.jpeg" class="card-img" alt="Product 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">saree</h5>
+                                <p class="card-text">Price: ₹500.00</p>
+                                <button class="btn btn-danger delete-button"><i class="fa fa-trash"></i></button>
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-outline-secondary minus"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input type="number" class="form-control quantity-input" value="1" id="quantity">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-outline-secondary plus"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Part 2: Summary -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header">Summary</div>
+                    <div class="card-body">
+                        <p class="card-text">Total Price: ₹1000.00</p>
+                        <p class="card-text">Shipping: ₹100.00</p>
+                        <hr>
+                        <p class="card-text">Total Cost: ₹1100.00</p>
+                        <button class="btn btn-primary checkout-button">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- This section imports footer from footer.html-->
+
+     <div id="footer-placeholder" style="margin-top: 20px;"></div>
+     <script>
+     //   Load and insert the navigation bar and footer dynamically 
+       fetch('header.html')
+           .then(response => response.text())
+           .then(html => {
+               document.getElementById('navbar-placeholder').innerHTML = html;
+           });
+       fetch('footer.html')
+           .then(response => response.text())
+           .then(html => {
+               document.getElementById('footer-placeholder').innerHTML = html;
+           });
+   </script>
+   <script>
+    const plus = document.querySelector('.plus')
+    const minus = document.querySelector('.minus')
+    const quantity = document.getElementById('quantity')
+    
+    plus.addEventListener('click', () => {
+        quantity.value = parseInt(quantity.value) + 1;
+    })
+    
+    minus.addEventListener('click', () => {
+        if (parseInt(quantity.value) > 1) {
+            quantity.value = parseInt(quantity.value) - 1;
+        }
+    })
+   </script>
+
+    <!-- Bootstrap and custom CSS files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

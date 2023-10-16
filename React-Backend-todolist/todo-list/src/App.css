@@ -1,0 +1,12 @@
+body{
+  background-color: brown;
+}
+
+.head{
+ position: relative;
+ left: 35%; 
+ top: 20px;
+ padding: 40px;
+ font-weight: 600;
+}
+
